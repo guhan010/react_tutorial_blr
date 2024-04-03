@@ -2,6 +2,7 @@ import React from "react";
 // import Project from "./components/pages/Project";
 // import { Route, Routes } from "react-router-dom";
 import "./components/Portfolio/About.css";
+import Store from "./Store";
 // import Project from "./components/pages/Project";
 // import Portfolio from "./components/pages/Portfolio";
 // import Home from "./components/Portfolio/Home";
@@ -14,7 +15,9 @@ function App() {
   return (
     <div>
       {/* <Home />
+      
       <Routes>
+      
         <Route path="/project" element={<Project />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="inbox" element={<Inbox />}></Route>
@@ -22,6 +25,7 @@ function App() {
         <Route path="/inbox/mailB" element={<MailB />} />
         <Route path="*" element={<NotFound />} />
       </Routes> */}
+      <Store />
     </div>
   );
 }
