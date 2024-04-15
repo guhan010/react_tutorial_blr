@@ -2,7 +2,8 @@ import React from "react";
 // import Project from "./components/pages/Project";
 // import { Route, Routes } from "react-router-dom";
 import "./components/Portfolio/About.css";
-import State from "./State";
+import LifeCycle from "./LifeCycle";
+// import State from "./State";
 // import Map from "./Map.jsx";
 // import Media from "./Media";
 // import Project from "./components/pages/Project";
@@ -28,7 +29,8 @@ function App() {
       {/* <Store /> */}
       {/* <Media /> */}
       {/* <Map /> */}
-      <State />
+      {/* <State /> */}
+      <LifeCycle props="hello" age={12} name="mrumu" />
     </div>
   );
 }
