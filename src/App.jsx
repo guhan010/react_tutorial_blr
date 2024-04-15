@@ -2,7 +2,9 @@ import React from "react";
 // import Project from "./components/pages/Project";
 // import { Route, Routes } from "react-router-dom";
 import "./components/Portfolio/About.css";
-import Store from "./Store";
+import State from "./State";
+// import Map from "./Map.jsx";
+// import Media from "./Media";
 // import Project from "./components/pages/Project";
 // import Portfolio from "./components/pages/Portfolio";
 // import Home from "./components/Portfolio/Home";
@@ -23,7 +25,10 @@ function App() {
         <Route path="/inbox/mailB" element={<MailB />} />
         <Route path="*" element={<NotFound />} />
       </Routes> */}
-      <Store />
+      {/* <Store /> */}
+      {/* <Media /> */}
+      {/* <Map /> */}
+      <State />
     </div>
   );
 }

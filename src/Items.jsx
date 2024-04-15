@@ -2,10 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Items = (props) => {
+  let stock;
+  if (props.availability) {
+    stock = "Available";
+  } else {
+    stock = "out of stock";
+  }
+
   return (
     <div>
       <span>
-        {props.itemName} - {props.price} - {props.availability}
+        {props.itemName} - {props.price} -{props.availability && "Available"}
       </span>
     </div>
   );
@@ -14,7 +21,7 @@ const Items = (props) => {
 Items.defaultProps = {
   itemName: "item",
   price: 454,
-  availability: "Out of Stock",
+  availability: false,
 };
 
 Items.propTypes = {
