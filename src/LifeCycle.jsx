@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Life from "./Life.jsx";
+// import Life from "./Life.jsx";
 
 export class LifeCycle extends Component {
   constructor(props) {
@@ -7,46 +7,46 @@ export class LifeCycle extends Component {
     this.state = {
       name: "tenny",
       age: 6238,
-      mount: true,
+      mount: false,
     };
   }
   // static getDerivedStateFromProps(props, state) {
   //   return { age: props.age, name: props.name };
   // }
 
-  // componentDidMount() {
-  //   console.log("componet mounted");
-  // }
-  // componentDidUpdate() {
-  //   console.log("componet updates");
-  // }
+  componentDidMount() {
+    console.log("componet mounted");
+  }
+  componentDidUpdate() {
+    console.log("componet UPDATED");
+  }
 
-  // getSnapshotBeforeUpdate(prevProps, prevState) {
-  //   document.getElementById("pre").innerText = prevState.name;
-  // }
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    document.getElementById("pre").innerText = prevState.name;
+    return null;
+  }
 
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   if (nextState.name !== this.state.name) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // }
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextState.name !== this.state.name) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   render() {
     return (
       <div>
-        {/* {this.state.name} - {this.state.age} - {this.props.props} <br />
+        {this.state.name} - {this.state.age} - {this.props.props} <br />
         <button onClick={() => this.setState({ name: "welcome" })}>
           Change
         </button>{" "}
         <br />
-        <h1 id="pre">Previous Value</h1> */}
-
-        {this.state.mount && <Life />}
-        <button onClick={() => this.setState({ mount: false })}>
+        <h1 id="pre">Previous Value</h1>
+        {/* {this.state.mount && <Life />}
+        <button onClick={() => this.setState({ mount: true })}>
           Unmount Component
-        </button>
+        </button> */}
       </div>
     );
   }

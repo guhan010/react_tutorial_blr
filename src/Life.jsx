@@ -7,6 +7,7 @@ class Life extends Component {
 
   componentDidMount() {
     console.log("life");
+    alert("lifecomponent mounted");
   }
   componentWillUnmount() {
     alert(" life component unmounted");

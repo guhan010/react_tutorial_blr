@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 // import Project from "./components/pages/Project";
 // import { Route, Routes } from "react-router-dom";
 import "./components/Portfolio/About.css";
-import LifeCycle from "./LifeCycle";
+// import LifeCycle from "./LifeCycle";
+import Effect from "./Effect";
 // import State from "./State";
 // import Map from "./Map.jsx";
 // import Media from "./Media";
@@ -15,6 +16,8 @@ import LifeCycle from "./LifeCycle";
 // import MailB from "./components/MailB";
 
 function App() {
+  const [state, setState] = useState(true);
+  // console.log("Props passed", count);
   return (
     <div>
       {/* <Home />
@@ -30,7 +33,11 @@ function App() {
       {/* <Media /> */}
       {/* <Map /> */}
       {/* <State /> */}
-      <LifeCycle props="hello" age={12} name="mrumu" />
+      {/* <LifeCycle props="hello" age={12} name="rama" /> */}
+      {state && <Effect />}
+      <button onClick={() => setState(!state)}>
+        {state ? "Unmount" : "mount"}
+      </button>
     </div>
   );
 }
