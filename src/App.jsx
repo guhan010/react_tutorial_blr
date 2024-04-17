@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 // import Project from "./components/pages/Project";
 // import { Route, Routes } from "react-router-dom";
 import "./components/Portfolio/About.css";
+import Data from "./Data";
 // import LifeCycle from "./LifeCycle";
-import Effect from "./Effect";
+// import Effect from "./Effect";
 // import State from "./State";
 // import Map from "./Map.jsx";
 // import Media from "./Media";
@@ -16,7 +17,7 @@ import Effect from "./Effect";
 // import MailB from "./components/MailB";
 
 function App() {
-  const [state, setState] = useState(true);
+  // const [state, setState] = useState(true);
   // console.log("Props passed", count);
   return (
     <div>
@@ -34,10 +35,14 @@ function App() {
       {/* <Map /> */}
       {/* <State /> */}
       {/* <LifeCycle props="hello" age={12} name="rama" /> */}
-      {state && <Effect />}
+      {/* {state && <Effect />}
       <button onClick={() => setState(!state)}>
         {state ? "Unmount" : "mount"}
       </button>
+      <h1>My King is channged ....
+        My Queen is channged....
+      </h1> */}
+      <Data />
     </div>
   );
 }
