@@ -1,10 +1,12 @@
 import React from "react";
 import Child from "./Child";
+import { Cost } from "./GrandFather";
 
 const Father = () => {
   return (
     <div>
-      Father <br />
+      Father - 
+      <Cost.Consumer>{(a) => <span>{a.amount}</span>}</Cost.Consumer>
       <Child />
     </div>
   );
