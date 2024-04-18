@@ -2,7 +2,8 @@ import React from "react";
 // import Project from "./components/pages/Project";
 // import { Route, Routes } from "react-router-dom";
 import "./components/Portfolio/About.css";
-import Data from "./Data";
+import GrandFather from "./components/GrandFather";
+// import Data from "./Data";
 // import LifeCycle from "./LifeCycle";
 // import Effect from "./Effect";
 // import State from "./State";
@@ -42,7 +43,8 @@ function App() {
       <h1>My King is channged ....
         My Queen is channged....
       </h1> */}
-      <Data />
+      {/* <Data /> */}
+      <GrandFather />
     </div>
   );
 }
