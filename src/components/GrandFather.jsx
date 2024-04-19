@@ -5,10 +5,12 @@ export let Money = React.createContext();
 export let Cost = React.createContext();
 
 const GrandFather = () => {
+  let fruits = ["apple", "orange", "grapes"];
+
   return (
     <div>
       GrandFather <br />
-      <Money.Provider value={{ amount: 100 }}>
+      <Money.Provider value={fruits}>
         <Cost.Provider value={{ amount: 200 }}>
           <Father />
         </Cost.Provider>

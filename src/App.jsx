@@ -2,7 +2,11 @@ import React from "react";
 // import Project from "./components/pages/Project";
 // import { Route, Routes } from "react-router-dom";
 import "./components/Portfolio/About.css";
-import GrandFather from "./components/GrandFather";
+// import MemoHook from "./MemoHook";
+// import RefHook from "./RefHook";
+import Parent from "./Parent";
+// import GrandFather from "./components/GrandFather";
+// import Update from "./Update";
 // import Data from "./Data";
 // import LifeCycle from "./LifeCycle";
 // import Effect from "./Effect";
@@ -44,7 +48,12 @@ function App() {
         My Queen is channged....
       </h1> */}
       {/* <Data /> */}
-      <GrandFather />
+      {/* <GrandFather /> */}
+      {/* <Update /> */}
+      {/* <MemoHook /> */}
+      {/* <RefHook /> */}
+      <Parent />
+  
     </div>
   );
 }
